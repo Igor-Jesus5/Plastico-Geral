@@ -8,7 +8,7 @@
     --cor-fundo: rgb(9, 12, 15);
     --cor-fundo-secundario: rgb(17, 23, 29);
     --cor-texto: white;
-    --cor-texto-secundario: rgb(26, 33, 41);
+    --cor-texto-secundario: rgb(114, 150, 184);
     --cor-card: rgb(27, 35, 43);
 }
 
@@ -17,6 +17,8 @@ body {
     color: var(--cor-texto);
     background: var(--cor-fundo);
 }
+
+/* HEADER */
 
 .navbar {
     background: var(--cor-fundo-secundario);
@@ -29,6 +31,8 @@ body {
     width: 100%;
 }
 
+/* ESTILIZANDO TITULO DO HADER*/
+
 .titulo-nav{
     display: flex;
     align-items: center;
@@ -38,7 +42,7 @@ body {
 
 .titulo-nav .icone {
     background: white;
-    color: var(--cor-texto-secundario);
+    color: rgb(26, 33, 41);
     width: 50px;
     height: 50px;
     border-radius: 15px;
@@ -51,7 +55,7 @@ body {
 
 .titulo-nav .icone-2 {
     background: var(--cor-card);
-    color: rgb(114, 150, 184);
+    color: var(--cor-texto-secundario);
     width: 50px;
     height: 50px;
     border-radius: 15px;
@@ -69,7 +73,7 @@ body {
 
 .titulo-nav p {
     letter-spacing: 2px;
-    color: rgb(114, 150, 184);
+    color: var(--cor-texto-secundario);
 }
 
 .nav {
@@ -77,6 +81,8 @@ body {
     justify-content: space-between;
     gap: 40px;
 }
+
+/* ESTILIZANDO CARDS DO HEADER*/
 
 .card-nav {
     background: var(--cor-card);
@@ -97,10 +103,59 @@ body {
 
 .card-nav p {
     letter-spacing: 2px;
-    color: rgb(114, 150, 184);
+    color: var(--cor-texto-secundario);
 }
+
+/* MAIN */
 
 main {
-    padding: 50px;
+    padding: 40px;
 }
 
+.titulo h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+/* LAYOUT DOS CARDS - ESTATISTICAS */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* ESTILIZANDO OS CARDS - ESTATISTICAS */
+
+.card-estatisticas {
+    background: var(--cor-fundo-secundario);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 14px;
+    border: 1px solid var(--cor-card);
+}
+
+.card-estatisticas h5 {
+    letter-spacing: 1px;
+    color: var(--cor-texto-secundario);
+}
+
+.card-estatisticas h2 {
+    font-size: 60px;
+    letter-spacing: 2.5px;
+}
+
+.card-estatisticas span {
+    color: var(--cor-texto-secundario);
+    font-size: 30px;
+}
+
+.card-estatisticas p {
+    color: rgb(105, 120, 138);
+    letter-spacing: 0.5;
+}
