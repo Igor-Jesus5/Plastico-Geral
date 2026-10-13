@@ -24,6 +24,9 @@ body {
     display: flex;
     gap: 80px;
     border-bottom: 1px solid rgb(26, 33, 41);
+    position: sticky;
+    z-index: 100;
+    width: 100%;
 }
 
 .titulo-nav{
@@ -96,3 +99,8 @@ body {
     letter-spacing: 2px;
     color: rgb(114, 150, 184);
 }
+
+main {
+    padding: 50px;
+}
+
