@@ -94,6 +94,7 @@ header {
     padding: 25px;
     display: flex;
     cursor: pointer;
+    border: 1px solid rgb(38, 49, 59);
 }
 
 .card-nav:hover {
