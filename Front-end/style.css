@@ -98,12 +98,17 @@ body {
 
 .card-nav h3 {
     letter-spacing: 0.5px;
-    margin-bottom: 5px
+    margin-bottom: 5px;
 }
 
 .card-nav p {
     letter-spacing: 2px;
     color: var(--cor-texto-secundario);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* MAIN */

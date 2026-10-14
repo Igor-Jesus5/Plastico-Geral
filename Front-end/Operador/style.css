@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cor-fundo: rgb(9, 12, 15);
+    --cor-fundo-secundario: rgb(17, 23, 29);
+    --cor-texto: white;
+    --cor-texto-secundario: rgb(114, 150, 184);
+    --cor-card: rgb(27, 35, 43);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-texto);
+    background: var(--cor-fundo);
+}
+
+/* HEADER */
+
+.navbar {
+    background: var(--cor-fundo-secundario);
+    padding: 20px 20px;
+    display: flex;
+    gap: 80px;
+    border-bottom: 1px solid rgb(26, 33, 41);
+    position: sticky;
+    z-index: 100;
+    width: 100%;
+}
+
+/* ESTILIZANDO TITULO DO HADER*/
+
+.titulo-nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.titulo-nav .icone {
+    background: white;
+    color: rgb(26, 33, 41);
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.titulo-nav .icone-2 {
+    background: var(--cor-card);
+    color: var(--cor-texto-secundario);
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.titulo-nav h1 {
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.titulo-nav p {
+    letter-spacing: 2px;
+    color: var(--cor-texto-secundario);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* ESTILIZANDO CARDS DO HEADER*/
+
+.card-nav {
+    background: var(--cor-card);
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    cursor: pointer;
+}
+
+.card-nav:hover {
+    background: rgb(26, 32, 37);
+}
+
+.card-nav h3 {
+    letter-spacing: 0.5px;
+    margin-bottom: 5px
+}
+
+.card-nav p {
+    letter-spacing: 2px;
+    color: var(--cor-texto-secundario);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* MAIN */
+
+main {
+    padding: 40px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.titulo p {
+
+    color: var(--cor-texto-secundario);
+}
+
+#produzindo {
+    align-self: flex-end;
+    position: relative;
+    top: -50px;
+    background: rgb(35, 61, 48);
+    padding: 8px;
+    border-radius: 7px;
+    color: rgb(29, 226, 128);
+}
+
+/* LAYOUT DOS CARDS - MAQUINA */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* ESTILIZANDO OS CARDS - MAQUINA */
+
+.card-maquina {
+    background: var(--cor-fundo-secundario);
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 14px;
+    border: 1px solid var(--cor-card);
+}
+
+.card-maquina h5 {
+    letter-spacing: 1px;
+    color: var(--cor-texto-secundario);
+}
+
+.card-maquina h2 {
+    font-size: 40px;
+    letter-spacing: 2.5px;
+}
+
+.card-maquina span {
+    color: var(--cor-texto-secundario);
+    font-size: 30px;
+}
+
+.card-maquina p {
+    color: rgb(105, 120, 138);
+    letter-spacing: 0.5;
+}
