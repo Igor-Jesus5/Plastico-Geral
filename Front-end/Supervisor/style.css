@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cor-fundo: rgb(9, 12, 15);
+    --cor-fundo-secundario: rgb(17, 23, 29);
+    --cor-texto: white;
+    --cor-texto-secundario: rgb(114, 150, 184);
+    --cor-card: rgb(27, 35, 43);
+    --cor-card-hover: rgb(26, 32, 37);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-texto);
+    background: var(--cor-fundo);
+}
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    background: var(--cor-fundo-secundario);
+    padding: 20px 20px;
+    display: flex;
+    gap: 80px;
+    border-bottom: 1px solid rgb(26, 33, 41);
+    width: 100%;
+}
+
+/* ESTILIZANDO TITULO DO HADER*/
+
+.titulo-nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.titulo-nav .icone {
+    background: white;
+    color: rgb(26, 33, 41);
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.titulo-nav .icone-2 {
+    background: var(--cor-card);
+    color: var(--cor-texto-secundario);
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.titulo-nav h1 {
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.titulo-nav p {
+    letter-spacing: 2px;
+    color: var(--cor-texto-secundario);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* ESTILIZANDO CARDS DO HEADER*/
+
+.card-nav {
+    background: var(--cor-card);
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    cursor: pointer;
+    border: 1px solid rgb(38, 49, 59);
+}
+
+.card-nav:hover {
+    background: var(--cor-card-hover);
+}
+
+.card-nav h3 {
+    letter-spacing: 0.5px;
+    margin-bottom: 5px
+}
+
+.card-nav p {
+    letter-spacing: 2px;
+    color: var(--cor-texto-secundario);
+}
+
+.card-nav .icone {
+    font-size: 30px;
+    color: var(--cor-texto-secundario);
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
