@@ -10,6 +10,7 @@
     --cor-texto: white;
     --cor-texto-secundario: rgb(114, 150, 184);
     --cor-card: rgb(27, 35, 43);
+    --cor-card-hover: rgb(26, 32, 37);
 }
 
 body {
@@ -93,7 +94,7 @@ body {
 }
 
 .card-nav:hover {
-    background: rgb(26, 32, 37);
+    background: var(--cor-card-hover);
 }
 
 .card-nav h3 {
@@ -104,6 +105,14 @@ body {
 .card-nav p {
     letter-spacing: 2px;
     color: var(--cor-texto-secundario);
+}
+
+.card-nav .icone {
+    font-size: 30px;
+    color: var(--cor-texto-secundario);
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
 }
 
 a {
@@ -140,6 +149,10 @@ main {
     padding: 8px;
     border-radius: 7px;
     color: rgb(29, 226, 128);
+}
+
+.maquinas {
+    margin-bottom: 20px;
 }
 
 /* LAYOUT DOS CARDS - MAQUINA */
@@ -182,4 +195,61 @@ main {
 .card-maquina p {
     color: rgb(105, 120, 138);
     letter-spacing: 0.5;
+}
+
+/* LAYOUT DOS CHAMADOS*/
+
+.chamado {
+    background: var(--cor-fundo-secundario);
+    border-radius: 14px;
+    border: 1px solid var(--cor-card);
+    padding: 20px;
+}
+
+.titulo-chamado {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+.titulo-chamado h4 {
+    font-size: 18px;
+    letter-spacing: 1px;    
+}
+
+.titulo-chamado p {
+    color: var(--cor-texto-secundario);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.chamado-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* ESTILZANDO OS CARDS - CHAMADO*/
+
+.card-chamado {
+    background: var(--cor-card);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.card-chamado:hover {
+    background: var(--cor-card-hover);
+}
+
+.card-chamado .icone {
+    font-size: 35px;
+    color: var(--cor-texto-secundario);
+    display: flex;
+    align-items: center;
 }
