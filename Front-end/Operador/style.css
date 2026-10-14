@@ -21,14 +21,18 @@ body {
 
 /* HEADER */
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
 .navbar {
     background: var(--cor-fundo-secundario);
     padding: 20px 20px;
     display: flex;
     gap: 80px;
     border-bottom: 1px solid rgb(26, 33, 41);
-    position: sticky;
-    z-index: 100;
     width: 100%;
 }
 
@@ -91,6 +95,7 @@ body {
     padding: 25px;
     display: flex;
     cursor: pointer;
+    border: 1px solid rgb(38, 49, 59);
 }
 
 .card-nav:hover {
@@ -240,6 +245,7 @@ main {
     justify-content: center;
     gap: 5px;
     border-radius: 14px;
+    border: 1px solid rgb(38, 49, 59);
     cursor: pointer;
 }
 
@@ -252,4 +258,48 @@ main {
     color: var(--cor-texto-secundario);
     display: flex;
     align-items: center;
+}
+
+/* CARD ESPERANDO CHAMADO*/
+
+.esperar-chamado {
+    background: var(--cor-fundo-secundario);
+    display: flex;
+    gap: 15px;
+    padding: 30px 20px;
+    border-radius: 14px;
+    margin-top: 20px;
+    border: 1px solid var(--cor-texto-secundario);
+}
+
+.esperar-chamado .icone {
+    font-size: 30px;
+    color: var(--cor-texto-secundario);
+    display: flex;
+    align-items: center;
+}
+
+.esperar-chamado h5 {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.esperar-chamado p {
+    color: var(--cor-texto-secundario);
+}
+
+.esperar-chamado button {
+    background: var(--cor-fundo-secundario);
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid rgb(128, 127, 127);
+    align-self: flex-end;
+    margin-left: 700px;
+}
+
+.esperar-chamado button:hover {
+    background: var(--cor-fundo);
 }
