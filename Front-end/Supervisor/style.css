@@ -124,3 +124,219 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+
+/* MAIN */
+
+main {
+    padding: 40px;
+}
+
+/* TOPO + FILTROS */
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.topo h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.topo h2 span {
+    color: var(--cor-texto-secundario);
+    font-weight: normal;
+}
+
+.filtros {
+    display: flex;
+    gap: 8px;
+}
+
+.filtro {
+    background: var(--cor-card);
+    color: var(--cor-texto-secundario);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.filtro:hover {
+    color: var(--cor-texto);
+}
+
+.filtro.ativo {
+    background: var(--cor-texto);
+    color: var(--cor-fundo);
+    border-color:var(--cor-texto);
+}
+
+/* LAYOUT DOS CHAMADOS + LATERAL*/
+
+.layout-chamado {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* CARDS DE CHAMADO*/
+
+.lista-chamado {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-chamado {
+    background: var(--cor-fundo-secundario);
+    border: 1px solid var(--cor-card);
+    border-left: 4px solid rgb(40, 52, 64);
+    border-radius: 0 14px 14px 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-chamado.urgente {
+    border-left-color: rgb(229, 83, 75);
+}
+
+.card-chamado.normal {
+    border-left-color: rgb(217, 165, 43);
+}
+
+.card-chamado.atendendo {
+    border-left-color: rgb(60, 141, 219);
+}
+
+.chamado-info {
+    flex: 1;
+}
+
+.chamado-linha {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.chamado-linha h4 {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.chamado-info p {
+    color: var(--cor-texto-secundario);
+}
+
+/* BOTOES*/
+
+.chamado-acoes {
+    display: flex;
+    gap: 8px;
+}
+ 
+.btn-principal,
+.btn-secundario {
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid var(--cor-borda);
+}
+
+.btn-principal {
+    background: var(--cor-texto);
+    color: var(--cor-fundo);
+    border-color: var(--cor-texto);
+}
+ 
+.btn-principal:hover {
+    background: rgb(220, 226, 232);
+}
+ 
+.btn-secundario {
+    background: var(--cor-card);
+    color: var(--cor-texto);
+}
+ 
+.btn-secundario:hover {
+    background: rgb(36, 46, 56);
+}
+ 
+button:focus-visible {
+    outline: 2px solid var(--cor-atendendo);
+    outline-offset: 2px;
+}
+
+/* PAINEL LATERAL */
+
+.painel-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ 
+.painel-bloco {
+    background: var(--cor-fundo-secundario);
+    border: 1px solid var(--cor-card);
+    border-radius: 14px;
+    padding: 20px;
+}
+ 
+.painel-bloco h4 {
+    color: var(--cor-texto-secundario);
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+ 
+.lista-maquinas {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ 
+.lista-maquinas li {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.st-ok {
+    color: var(--cor-ok);
+}
+ 
+.st-urgente {
+    color: rgb(255, 139, 132);
+}
+ 
+.st-normal {
+    color: rgb(232, 191, 90);
+}
+ 
+.st-atendendo {
+    color: rgb(125, 182, 238);
+}
+ 
+.valor {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+ 
+.valor span {
+    font-size: 16px;
+    color: var(--cor-texto-secundario);
+    letter-spacing: 0;
+}

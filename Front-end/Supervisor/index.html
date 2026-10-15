@@ -55,34 +55,78 @@
 
     <main>
         <div class="chamados-abertos">
-            <div class="titulo">
+            <div class="topo">
                 <h2>Chamados Abertos <span>· 3</span></h2>
+
+                <div class="filtros">
+                    <button class="filtro ativo">Todos</button>
+                    <button class="filtro">Urgentes</button>
+                    <button class="filtro">Em atendimento</button>
+                </div>
             </div>
 
-            <div class="card-grid">
-                <h4><i class="ti ti-tool"></i>Extrusora 02 - Manutenção</h4>
-                <p>João - "Vazamento de óleo na rosca"</p>
-                <div>
-                    <button>Atender</button>
-                    <button>Repassar</button>
+            <div class="layout-chamado">
+                <div class="lista-chamado">
+                    <div class="card-chamado urgente">
+                        <div class="chamado-info">
+                            <div class="chamado-linha">
+                                <h4><i class="ti ti-tool"></i>Extrusora 02 - Manutenção</h4>
+                                <span>Urgente · 02:14</span>
+                            </div>
+                            <p>João - "Vazamento de óleo na rosca"</p>
+                            <div class="chamado-acoes">
+                                <button class="btn-principal">Atender</button>
+                                <button class="btn-secundario">Repassar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-chamado normal">
+                        <div class="chamado-info">
+                            <div class="chamado-linha">
+                                <h4><i class="ti ti-package"></i>Impressora 01 - Fata de Material</h4>
+                                <span>Normal · 08:30</span>
+                            </div>
+                            <p>Maria - "Tinta acabando"</p>
+                            <div class="chamado-acoes">
+                                <button class="btn-principal">Atender</button>
+                                <button class="btn-secundario">Repassar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-chamado atendendo">
+                        <div class="chamado-info">
+                            <div class="chamado-linha">
+                                <h4><i class="ti ti-microscope"></i>Cortadora 03 - Qualidade</h4>
+                                <span>Em atendimento · Carlo</span>
+                            </div>
+                            <p>Pedro - "Solda fraca no fundo do saco"</p>
+                            <div class="chamado-acoes">
+                                <button class="btn-principal">Atender</button>
+                                <button class="btn-secundario">Repassar</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <aside class="painel-lateral">
+                    <div class="painel-bloco">
+                        <h4>Máquinas</h4>
+                        <ul class="lista-maquinas">
+                            <li><span>Extrusora 01</span><span class="st-ok">Produzindo</span></li>
+                            <li><span>Extrusora 02</span><span class="st-urgente">Chamado</span></li>
+                            <li><span>Impressora 01</span><span class="st-normal">Chamado</span></li>
+                            <li><span>Cortadora 03</span><span class="st-atendendo">Atendendo</span></li>
+                            <li><span>Cortadora 04</span><span class="st-ok">Produzindo</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="painel-bloco">
+                        <h4>Tempo médio de resposta</h4>
+                        <p class="valor">04:20 <span>hoje</span></p>
+                    </div>
+                </aside>
             </div>
-            <div class="card-grid">
-                <h4><i class="ti ti-package"></i>Impresora 01 - Falta de material</h4>
-                <p>Maria - "Tinta acabando"</p>
-                <div>
-                    <button>Atender</button>
-                    <button>Repassar</button>
-                </div>
-            </div>
-            <div class="card-grid">
-                <h4><i class="ti ti-microscope"></i>Cortadora 03 - Qualidade</h4>
-                <p>Pedro - "Solda fraca no fundo do saco"</p>
-                <div>
-                    <button>Atender</button>
-                    <button>Repassar</button>
-                </div>
-            </div>
+
         </div>
     </main>
 </body>
